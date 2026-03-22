@@ -1,0 +1,185 @@
+---
+---
+
+<section id="home" class="hero">
+	<div class="hero-content">
+		<h1 class="hero-title">
+			Powering Your Future with <span class="highlight">Smart Energy</span> & <span class="highlight">Tech Solutions</span>
+		</h1>
+		<p class="hero-subtitle">
+			Solar, CCTV, Smart Electrical Systems & Professional Tech Training
+		</p>
+		<div class="hero-buttons">
+			<a href="#contact" class="btn btn-primary">Get a Quote</a>
+			<a href="#academy" class="btn btn-secondary">Join Our Academy</a>
+		</div>
+	</div>
+	<div class="hero-overlay"></div>
+</section>
+
+<style>
+	.hero {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+		overflow: hidden;
+		padding: 6rem 2rem 4rem;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image:
+			radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+			radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+			radial-gradient(circle at 50% 20%, rgba(220, 38, 38, 0.08) 0%, transparent 50%);
+		animation: pulse 15s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.6;
+		}
+	}
+
+	.hero-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background:
+			repeating-linear-gradient(
+				90deg,
+				transparent,
+				transparent 50px,
+				rgba(220, 38, 38, 0.03) 50px,
+				rgba(220, 38, 38, 0.03) 51px
+			),
+			repeating-linear-gradient(
+				0deg,
+				transparent,
+				transparent 50px,
+				rgba(220, 38, 38, 0.03) 50px,
+				rgba(220, 38, 38, 0.03) 51px
+			);
+		pointer-events: none;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	.hero-title {
+		font-size: 3.5rem;
+		font-weight: 800;
+		color: white;
+		margin: 0 0 1.5rem;
+		line-height: 1.2;
+		letter-spacing: -1px;
+	}
+
+	.hero-title .highlight {
+		color: #dc2626;
+		position: relative;
+		display: inline-block;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: rgba(255, 255, 255, 0.85);
+		margin: 0 0 3rem;
+		font-weight: 400;
+		line-height: 1.6;
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: 1.5rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+		font-weight: 600;
+		text-decoration: none;
+		border-radius: 8px;
+		transition: all 0.3s ease;
+		display: inline-block;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #dc2626;
+		color: white;
+		box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
+	}
+
+	.btn-primary:hover {
+		background: #b91c1c;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 30px rgba(220, 38, 38, 0.6);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid #dc2626;
+	}
+
+	.btn-secondary:hover {
+		background: #dc2626;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 5rem 1.5rem 3rem;
+		}
+
+		.hero-title {
+			font-size: 2.25rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+			margin-bottom: 2rem;
+		}
+
+		.hero-buttons {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.btn {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero-title {
+			font-size: 1.875rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+	}
+</style>

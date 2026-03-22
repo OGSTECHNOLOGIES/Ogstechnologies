@@ -1,0 +1,184 @@
+---
+---
+
+<section id="services" class="services">
+	<div class="container">
+		<div class="section-header">
+			<h2>Our Services</h2>
+			<p>Comprehensive tech and energy solutions tailored to your needs</p>
+		</div>
+
+		<div class="services-grid">
+			<div class="service-card">
+				<div class="service-icon solar">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+					</svg>
+				</div>
+				<h3>Solar Power Systems</h3>
+				<p>Installation and maintenance of advanced solar energy solutions for homes and businesses. Reduce your energy costs and go green.</p>
+			</div>
+
+			<div class="service-card">
+				<div class="service-icon cctv">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+					</svg>
+				</div>
+				<h3>CCTV & Security Systems</h3>
+				<p>Advanced surveillance and monitoring systems to keep your property safe and secure 24/7. Remote access and real-time alerts.</p>
+			</div>
+
+			<div class="service-card">
+				<div class="service-icon electrical">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+					</svg>
+				</div>
+				<h3>Smart Electrical Systems</h3>
+				<p>Modern electrical wiring and installations for residential and commercial properties. Energy-efficient and future-ready solutions.</p>
+			</div>
+
+			<div class="service-card">
+				<div class="service-icon maintenance">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+					</svg>
+				</div>
+				<h3>Maintenance Services</h3>
+				<p>Comprehensive repairs, upgrades, and technical support for all your systems. Regular maintenance to ensure optimal performance.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.services {
+		padding: 6rem 2rem;
+		background: white;
+		position: relative;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.75rem;
+		font-weight: 800;
+		color: #000;
+		margin: 0 0 1rem;
+		letter-spacing: -0.5px;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: #666;
+		margin: 0;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 16px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		transition: all 0.3s ease;
+		border: 2px solid transparent;
+	}
+
+	.service-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 12px 40px rgba(220, 38, 38, 0.15);
+		border-color: #dc2626;
+	}
+
+	.service-icon {
+		width: 70px;
+		height: 70px;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1.5rem;
+		transition: all 0.3s ease;
+	}
+
+	.service-icon svg {
+		width: 36px;
+		height: 36px;
+	}
+
+	.service-icon.solar {
+		background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%);
+		color: #b45309;
+	}
+
+	.service-icon.cctv {
+		background: linear-gradient(135deg, #dbeafe 0%, #60a5fa 100%);
+		color: #1e40af;
+	}
+
+	.service-icon.electrical {
+		background: linear-gradient(135deg, #fee2e2 0%, #dc2626 100%);
+		color: #7f1d1d;
+	}
+
+	.service-icon.maintenance {
+		background: linear-gradient(135deg, #e5e7eb 0%, #6b7280 100%);
+		color: #1f2937;
+	}
+
+	.service-card:hover .service-icon {
+		transform: scale(1.1) rotate(5deg);
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #000;
+		margin: 0 0 1rem;
+	}
+
+	.service-card p {
+		font-size: 1rem;
+		color: #666;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.services {
+			padding: 4rem 1.5rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.section-header p {
+			font-size: 1rem;
+		}
+
+		.services-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.service-card {
+			padding: 2rem;
+		}
+	}
+</style>
